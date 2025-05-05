@@ -1,1 +1,4 @@
-A simple HTML/JS/CSS starter template
+## Créditos
+
+Atividade realizada com a orientação da professora Luana Leal.
+
