@@ -1,0 +1,133 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 60px; /* espaço para o rodapé */
+  }
+  
+  
+  /* Container do chat */
+  .chat-container {
+    width: 100%;
+    max-width: 420px;
+    height: 90vh;
+    background-color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  /* Área das mensagens */
+  .chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Estilo das mensagens */
+  .chat-message {
+    max-width: 75%;
+    padding: 10px 15px;
+    border-radius: 16px;
+    font-size: 15px;
+    line-height: 1.4;
+    word-wrap: break-word;
+  }
+  
+  .user {
+    align-self: flex-end;
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border-bottom-right-radius: 0;
+  }
+  
+  .bot {
+    align-self: flex-start;
+    background-color: #e2e3e5;
+    color: #383d41;
+    border-bottom-left-radius: 0;
+  }
+  
+  /* Formulário de entrada */
+  #chat-form {
+    display: flex;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  #user-input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    font-size: 15px;
+    margin-right: 10px;
+    transition: border 0.3s ease;
+  }
+  
+  #user-input:focus {
+    border-color: #007bff;
+  }
+  
+  button {
+    padding: 10px 18px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background-color: transparent;
+    font-size: 14px;
+    color: #555;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .chat-header {
+    width: 100%;
+    background-color: transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .chat-header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  
+  
